@@ -1,0 +1,369 @@
+
+
+#header {
+    display: none;
+}
+
+#conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    /* background-image: url(/assets/background-teste3.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-position: left; */
+ 
+}
+
+#menu {
+    position: fixed;
+    margin-bottom: 10px;
+    top: 0;
+    
+    z-index: 5;
+}
+
+/************************************** COMENTAR **************************************/
+
+#caixa-comentar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 40%;
+    min-height: 100vh;
+
+    /* margin-top: 12vh; */
+    /* padding-top: 2vh; */
+
+    background-image: url(/assets/background-teste3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    position: fixed;
+    left: 0;
+
+    box-sizing: border-box;
+
+    font-size: calc(15px + (30 - 15) * ((100vw - 380px) / (1920 - 380)));
+
+    /* background-color: tomato; */
+}
+
+#caixa-comentar img {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+
+}
+
+form {
+    color: rgb(231, 223, 221);
+    /* margin-top: 10%; */
+
+    width: 90%;
+    height: 70%;
+
+    align-self: center;
+
+}
+
+/* form input {
+    font-size: calc(10px + (25 - 10) * ((100vw - 380px) / (1920 - 380)));
+} */
+
+form input:nth-child(3) {
+    width: 60vw;
+}
+
+/* #logo-form {
+    font-size: calc(10px + (40 - 4) * ((100vw - 380px) / (1920 - 380)));
+    font-family: 'dangerbotregular';
+    -webkit-text-stroke: 1px rgb(255,255,204);
+    -webkit-text-stroke: 1px rgb(231, 223, 221);
+    color: rgb(231, 223, 221);
+    text-align: center;
+
+    align-self: center;
+
+    width: 30%;
+    margin-bottom: 5%;
+
+} */
+
+#b-nome {
+    width: 90%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    outline: none;
+
+    /* font-size: 0.7em; */
+
+    font-size: calc(10px + (20 - 10) * ((100vw - 380px) / (1920 - 380)));
+}
+
+#b-assunto {
+    width: 90%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    outline: none;
+
+    font-size: calc(10px + (20 - 10) * ((100vw - 380px) / (1920 - 380)));
+}
+
+#b-email {
+    width: 100%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    outline: none;
+
+    font-size: calc(10px + (20 - 10) * ((100vw - 380px) / (1920 - 380)));
+}
+
+#e-mail {
+    width: 40%;
+    margin-top: 5%;
+}
+
+#b-comentar {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    resize: none;
+    outline: none;
+
+    font-size: calc(10px + (20 - 10) * ((100vw - 380px) / (1920 - 380)));
+
+    padding: 0 0 0 0;
+
+}
+
+#nome {
+    display: flex;
+    flex-direction: column;
+
+    align-self: center;
+
+    width: 80%;
+
+    box-sizing: border-box;
+}
+
+#assunto {
+    display: flex;
+    flex-direction: column;
+    
+    width: 80%;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-comentar {
+    color: rgb(231, 223, 221);
+    background-color: rgb(107, 142, 35);
+    border: none;
+
+    float: right;
+
+    font-size: calc(15px + (30 - 15) * ((100vw - 380px) / (1920 - 380)));
+
+    cursor: pointer;
+}
+
+#btn-comentar:hover {
+    background-color: rgb(107, 142, 35, 0.8);
+}
+
+/************************************** COMENTÁRIOS **************************************/
+
+#caixa-comentarios {
+
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+    min-height: 88vh;
+    box-sizing: border-box;
+
+    background-color: rgb(51, 10, 107);
+    /* background-color: rgb(95, 19, 200); */
+
+    padding: 2% 1% 2% 3%;
+}
+
+#filtrar {
+    display: flex;
+    justify-content: space-between;
+
+    color: rgb(231, 223, 221);
+
+    font-size: calc(15px + (30 - 15) * ((100vw - 380px) / (1920 - 380)));
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    white-space: nowrap;
+}
+
+#b-filtrar {
+
+    width: 60%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    outline: none;
+
+    font-size: calc(10px + (30 - 4) * ((100vw - 380px) / (1920 - 380)));
+}
+
+#btn-filtrar {
+    color: rgb(231, 223, 221);
+    background-color: rgb(107, 142, 35);
+    border: none;
+
+    float: right;
+
+    cursor: pointer;
+
+    font-size: calc(15px + (30 - 15) * ((100vw - 380px) / (1920 - 380)));
+}
+
+#btn-filtrar:hover {
+    background-color: rgb(107, 142, 35, 0.8);
+}
+
+#comentarios {
+    list-style: none;
+    
+    padding-left: 0;
+
+    font-size: calc(18px + (30 - 18) * ((100vw - 380px) / (1920 - 380)));
+
+    color: rgb(231, 223, 221);
+}
+
+#comentarios li div:first-child {
+
+    font-size: calc(15px + (22 - 15) * ((100vw - 380px) / (1920 - 380)));
+
+    margin-top: 2%;
+
+    border-top: 1px solid rgb(231, 223, 221);
+}
+
+#comentarios li div:nth-child(2) {
+    font-size: calc(12px + (18 - 12) * ((100vw - 380px) / (1920 - 380)));
+
+    border-top: none;
+}
+
+#back2top {
+    display: none;
+}
+
+
+@media(max-width: 768px) {
+
+    #conteudo {
+        flex-direction: column;
+    }
+
+    #menu {
+        
+        position: static ;
+
+
+
+
+        margin-bottom: 10px;
+        z-index: 0;
+
+        background-position: top;
+        
+    }
+
+    #caixa-comentar {
+        position: static;
+        min-height: 0;
+
+        width: 100%;
+
+        margin-bottom: 5%;
+    }
+
+    #caixa-comentar form {
+        width: 90%;
+    }
+
+    #caixa-comentarios {
+        margin-top: 0;
+        width: 100%;
+        
+        min-height: 0;
+
+        padding: 5% 0 0 0;
+    }
+
+    #caixa-comentarios ul {
+        width: 80%;
+
+        /* padding: 5% 0 0 0; */
+
+        align-self: center;
+    }
+
+    #filtrar {
+        width: 90%;
+        align-self: center;
+    }
+
+    #b-filtrar {
+        width: 40%;
+    }
+
+    #comentarios li div:first-child {
+        
+        margin-top: 5%;
+
+    }
+
+    #back2Top {
+        width: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        display: none;
+        cursor: pointer;
+        -moz-transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+        position: fixed;
+        bottom: 80px;
+        right: 10px;
+        background-color: #DDD;
+        color: #555;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: none;
+      }
+    
+      #back2Top:hover {
+        background-color: #DDF;
+        color: #000;
+      }
+
+}
+
+

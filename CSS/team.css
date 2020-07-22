@@ -1,0 +1,168 @@
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+
+    height: 78vh;
+
+    width: 100%;
+
+    background-image: url(../assets/background-teste3.png);
+    background-size: 100%;
+
+    color: rgb(231, 223, 221);
+    font-size: calc(15px + (30 - 15) * ((100vw - 380px) / (1920 - 380)));
+
+    padding-top: 4%;
+
+    box-sizing: border-box;
+}
+
+#conteudo span:first-child {
+    align-self: center;
+    font-size: calc(15px + (30 - 4) * ((100vw - 380px) / (1920 - 380)));
+    text-align: center;
+    width: 80%;
+}
+
+
+#time-logo {
+
+    font-family: 'dangerbotregular';
+    /* -webkit-text-stroke: 1px rgb(255,255,204); */
+    color: rgb(231, 223, 221) !important;
+}
+
+#time {
+
+    width: 80vw;
+
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-self: center;/* text-align: start; */
+
+}
+
+.imgs-time {
+    border-radius: 50%;
+    align-self: center;
+
+    width: calc(50px + (120 - 50) * ((100vw - 380px) / (1920 - 380)));
+
+    margin-right: 5%;
+    
+}
+
+#time-esquerda {
+    display: flex;
+
+}
+
+#time-esquerda ul {
+    list-style: none;
+
+    width: 100%;
+
+    padding-left: 0;
+}
+
+#time-esquerda ul li {
+    display: flex;
+
+    width: 110%;
+
+    margin-bottom: 3vh;
+}
+
+#time-esquerda ul li div {
+    width: 100%;
+}
+
+#time-esquerda ul li a img {
+    width: calc(15px + (32 - 15) * ((100vw - 380px) / (1920 - 380)));
+    align-self: center;
+}
+
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+
+#time-direita {
+    display: flex;
+
+}
+
+#time-direita ul {
+    list-style: none;
+
+    width: 100%;
+
+    padding-left: 0;
+}
+
+#time-direita ul li {
+    display: flex;
+
+    width: 110%;
+
+    margin-bottom: 3vh;
+}
+
+#time-direita ul li div {
+    width: 100%;
+}
+
+#time-direita ul li a img {
+    width: calc(15px + (32 - 15) * ((100vw - 380px) / (1920 - 380)));
+    align-self: center;
+}
+
+@media(max-width: 768px) {
+
+    #conteudo {
+        height: 80vh;
+    }
+
+    #time {
+        flex-direction: column;
+    }
+
+    #time-esquerda ul {
+        margin-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+ 
+    }
+
+    #time-esquerda ul li {
+
+        width: 70%;
+        align-self: center;
+        text-align: center;
+    }
+
+    #time-esquerda ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    #time-direita ul {
+        margin-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+ 
+    }
+
+    #time-direita ul li {
+
+        width: 70%;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+
+

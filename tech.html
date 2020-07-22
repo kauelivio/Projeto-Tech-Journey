@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechJourney</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/careers.css">
+</head>
+
+<body>
+
+    <div id="conteiner">
+
+        <div id="header">
+
+            <span>@TechJourney</span>
+
+            <span>|</span>
+
+            <div>
+
+                <a href="" class="fa fa-facebook"></a>
+
+                <a href="" class="fa fa-instagram"></a>
+
+                <a href="" class="fa fa-twitter"></a>
+
+                <a href="" class="fa fa-youtube"></a>
+
+            </div>
+
+
+
+        </div>
+
+        <div id="menu">
+
+            <div>
+                <img src="assets/icontest.jpg" alt="Logo">
+                <div id="nome-logo">Tech Journey</div>
+
+            </div>
+
+
+            <div id="conteiner-menu-responsivo">
+
+                <span class="icon">
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                    <div class="hamburger"></div>
+                </span>
+
+                <!-- <img src="../PI/assets/squirrel.png" alt=""> -->
+
+
+
+            </div>
+
+            <ul id="botoes-menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="careers.html">
+                    <li>Carreiras</li>
+                </a>
+                <a href="tech.html">
+                    <li>Tech</li>
+                </a>
+                <a href="study.html" s>
+                    <li>Estudos</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contato</li>
+                </a>
+                <a href="team.html">
+                    <li>Time</li>
+                </a>
+            </ul>
+
+        </div>
+
+        <ul id="menu-responsivo">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="careers.html">
+                <li>Carreiras</li>
+            </a>
+            <a href="tech.html">
+                <li>Tech</li>
+            </a>
+            <a href="study.html" s>
+                <li>Estudos</li>
+            </a>
+            <a href="blog.html">
+                <li>Blog</li>
+            </a>
+            <a href="contact.html">
+                <li>Contato</li>
+            </a>
+            <a href="team.html">
+                <li>Time</li>
+            </a>
+
+        </ul>
+
+        <div id="conteudo">
+
+            <div class="container">
+
+                <div id="row">
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                    <div class="column">
+
+                        <div id="caixinha" class="demo cursor" onclick="currentSlide(1)">
+                            APP's
+                        </div>
+                        <!-- <img class="demo cursor" src="assets/teste1.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="The Woods"> -->
+                    </div>
+
+                    <div class="column">
+
+                        <div id="caixinha" class="demo cursor" onclick="currentSlide(2)">
+                            Brasil
+                        </div>
+
+                    </div>
+
+                    <div class="column">
+
+                        <div id="caixinha" class="demo cursor" onclick="currentSlide(3)">
+                            Em alta
+                        </div>
+                        <!-- <img class="demo cursor" src="assets/teste1.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="The Woods"> -->
+                    </div>
+
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Full-width images with number text -->
+                <ul id="ulcaixa">
+
+                    <li class="mySlides">
+
+                        <div class="titulo">
+                            LINGUAGENS PRESENTES NOS APP’s
+                        </div>
+
+                        <p class="texto">
+                            Você já se perguntou como foram programadas e qual linguagem utilizaram?
+                        </p>
+
+                        <p class="sub-titulo">Facebook</p>
+
+                        <p class="texto">
+                            O Facebook foi desenvolvido, em 2004, com a linguagem PHP. Em 2011, com seu grande
+                            crescimento optaram pela utilização do Hip Hop for PHP, um transpilador fonte a fonte.
+                            Basicamente, esse transpilador "traduz" os códigos de PHP para C++.
+                        </p>
+
+                        <p class="texto">
+                            Em 2014, os desenvolvedores criaram o Hack, uma nova linguagem de programação para o HHVM
+                            (HipHop Virtual Machine). Essa nova linguagem tem um melhor desempenho e facilita
+                            visualmente os erros no código.
+                        </p>
+
+                        <p class="texto">
+                            Atualmente, o Front-End é desenvolvido em JavaScript. O Back-End em Hack. Outras linguagens
+                            como Python, C++, Java, Erlang, D, XHP e Haskell estão presentes em seu código.
+                        </p>
+
+                        <p class="sub-titulo">Twitter</p>
+
+                        <p class="texto">
+                            Como a maioria dos websites, o JavaScript é utilizado em seu front-end. No entanto, a
+                            estrutura Back-End era desenvolvido em Ruby e com seu banco de dados em MySQL.
+                        </p>
+
+                        <p class="texto">
+                            Contudo, os problemas de performance fizeram a rede social migrar seu Back-End para
+                            linguagem Scala. Por fim, também utilizaram um servidor Java, chamado Blender, para
+                            aprimorar sua performance em Search Stack.
+                        </p>
+
+                        <p class="sub-titulo">Instagram</p>
+
+                        <p class="texto">
+                            A plataforma utiliza serviços de:
+                        </p>
+
+                        <p class="texto">
+                            - Armazenamento da Amazon;
+                        </p>
+
+                        <p class="texto">
+                            - Sistema de gerenciamento de banco de dados com o PostgreSQL;
+                        </p>
+
+                        <p class="texto">
+                            - Nginx como web Server;
+                        </p>
+
+                        <p class="texto">
+                            - Python, como Data Science para visualização e processamentos de algoritmos de Inteligência
+                            Artificial;
+                        </p>
+
+                        <p class="texto">
+                            - Django como framework, uma ferramenta que auxilia o desenvolvedor a programar uma
+                            linguagem, no caso Python.
+                        </p>
+
+                        <p class="sub-titulo">WhatsApp</p>
+
+                        <p class="texto">
+                            Desde 2009 em sua criação, a plataforma foi desenvolvida somente para mobile. Porém, só em
+                            2015 ganhou uma versão para desktop, desenvolvida em PHP.
+                        </p>
+
+                        <p class="texto">
+                            A linguagem de programação adotada é a Erlang. Uma linguagem enxuta, mas que permite aos
+                            programadores atualizarem ou corrigir bugs sem que o serviço pare de funcionar para milhões
+                            de usuários.
+                        </p>
+
+                        <p class="sub-titulo">Youtube</p>
+
+                        <p class="texto">
+                            Youtube, a maior plataforma de vídeos do mundo!
+                        </p>
+
+                        <p class="texto">
+                            Desenvolvida com linguagens PHP, Python, Actionscript e JavaScript e até em C++.
+                        </p>
+
+                        <p class="texto">
+                            O impressionante é sua infraestrutura elaborada e bem complexa. Por exemplo, a plataforma
+                            conta com 14 Data Centers do Google espalhadas pelo mundo.
+                        </p>
+
+                        <p class="sub-titulo">LinkedIn</p>
+
+                        <p class="texto">
+                            A maior rede social para profissionais do mundo.
+                        </p>
+
+                        <p class="texto">
+                            O LinkedIn apresenta uma arquitetura cheia de tecnologia, desenvolvida em Java e Scala. No
+                            banco de dados é utilizado Oracle e o MySQL.
+                        </p>
+
+
+
+
+                    </li>
+
+                    <li class="mySlides">
+
+                        <div class="titulo">
+                            LINGUAGEM DE PROGRAMAÇÃO DESENVOLVIDA POR UM BRASILEIRO
+                        </div>
+
+                        <p class="texto">
+                            José Valim, criador da linguagem de programação brasileira - Exilir - pela empresa de
+                            consultoria de software Plataformatec. O programador de Porto Alegre nascido no ano de 1986
+                            é formado como Engenheiro pela Escola Politécnica da Universidade de São Paulo e possui
+                            mestrado em Ciência da Computação pela Politécnica de Torino, na Itália.
+                        </p>
+
+                        <img src="assets/elixir-jose-valim.jpg" alt="">
+
+                        <p class="texto">
+                            Exilir é uma linguagem de programação funcional, distribuída, orientada a processos e
+                            concorrente. Linguagem open source, executada na Erlang VM (Máquina Virtual Erlang). Seu
+                            objetivo é ter uma programação produtiva para aplicações, solução de problemas e manutenção;
+                            tendo de diversos recursos e ferramentas de outras linguagens.
+                        </p>
+
+                        <p class="texto">
+                            A Honeypot fez um pequeno documentário falando sobre o Exilir.
+                        </p>
+
+                        <p class="texto">
+                            <a href="https://www.youtube.com/watch?v=lxYFOM3UJzo">
+                                https://www.youtube.com/watch?v=lxYFOM3UJzo
+                            </a>
+                        </p>
+
+                        <p class="texto">
+                            Repositórios no Github:
+                        </p>
+
+                        <p class="texto">
+                            <a href="https://github.com/elixir-lang/elixir/blob/master/LICENSE">
+                                https://github.com/elixir-lang/elixir/blob/master/LICENSE
+                            </a>
+                        </p>
+
+                        <p class="texto">
+                            <a href="https://github.com/elixir-lang/elixir/releases/tag/v1.9.0">
+                                https://github.com/elixir-lang/elixir/releases/tag/v1.9.0
+                            </a>
+                        </p>
+
+                    </li>
+
+                    <li class="mySlides">
+
+                        <div class="titulo">
+                            LINGUAGENS DE PROGRAMAÇÃO EM ALTA
+                        </div>
+
+                        <p class="sub-titulo">
+                            Java
+                        </p>
+
+                        <p class="texto">
+                            Presente desde 1991, Java é uma das linguagens de programação mais utilizadas no mundo.
+                            Graças a sua capacidade de adaptar seu programa e sua utilização em tarefas do dia-a-dia.
+                        </p>
+
+                        <p class="texto">
+                            Utilizado na criação de games, aplicativos mobile. Tem como vantagem a sua retro
+                            compatibilidade, ou seja, versões antigas ainda podem ser entendidas pelas versões atuais.
+                        </p>
+
+                        <p class="sub-titulo">
+                            C++
+                        </p>
+
+                        <p class="texto">
+                            O C++, assim como o C# tem bases próximas da linguagem C. Criada em 1979, se comporta igual
+                            ao Java, linguagem de programação de uso geral. Muito vigente na programação de games por
+                            causa da alta performance, desempenho e flexibilidade.
+                        </p>
+
+                        <p class="sub-titulo">
+                            JavaScript
+                        </p>
+
+                        <p class="texto">
+                            A linguagem de programação que vem conquistando milhares de desenvolvedores/programadores de
+                            qualquer área do TI.
+                        </p>
+
+                        <p class="texto">
+                            Com JavaScript podemos criar interatividade com o usuário nas aplicações web, e está
+                            presente em quase todas as aplicações e plataformas.
+                        </p>
+
+                        <p class="texto">
+                            Por ser de fácil entendimento, muitos acreditam que seja a melhor linguagem para um
+                            iniciante adquirir familiaridade com a programação.
+                        </p>
+
+                        <p class="sub-titulo">
+                            Python
+                        </p>
+
+                        <p class="texto">
+                            Sendo uma linguagem de programação bem versátil e de leitura fácil, Python permite a
+                            digitação de códigos mais "clean", ou seja, com menos linhas. Lançado em 1989, Python possui
+                            software bases de Open Source e é muito utilizado em melhorias para a redes e Machine
+                            Learning. 
+                        </p>
+
+                        <p class="sub-titulo">
+                            PHP
+                        </p>
+
+                        <p class="texto">
+                            PHP - Hypertext Preprocessor - é uma linguagem de script bastante usado para o
+                            desenvolvimento web. Pode ser embutida dentro de um HTML e tem integração entre o banco de
+                            dados MySQL.
+                        </p>
+
+                        <p class="texto">
+                            Exemplos de sites: Facebook e Yahoo.
+                        </p>
+
+                        <p class="sub-titulo">
+                            Ruby
+                        </p>
+
+                        <p class="texto">
+                            As sintaxes de leitura fácil é um ponto forte. Ruby tem a desvantagem de sua linguagem não
+                            ser escalonada. O que gera erro no código conforme os números de usuário aumentam.
+                        </p>
+
+                        <p class="texto">
+                            Airbnb utiliza linguagem Ruby.
+                        </p>
+
+                        <p class="sub-titulo">
+                            Swift
+                        </p>
+
+                        <p class="texto">
+                            A Swift é a atual linguagem utilizada pela Apple para desenvolver o iOS, MacOS, WatchOS,
+                            tvOS. Pois tem compatibilidade com a Objective-C.
+                        </p>
+
+                        <p class="texto">
+                            Sua popularidade cresce tanto, desde sua criação em 2014, que atualmente existem faculdades
+                            que oferecem o curso em sua grade curricular, por exemplo a Universidade Técnica de Munique
+                            e a Universidade de Stanford.
+                        </p>
+
+                        <p class="sub-titulo">
+                            Golang (Go)
+                        </p>
+
+                        <p class="texto">
+                            A Google criou uma linguagem de programação Open Source, influenciada pelas linguagens C e
+                            Pascal.
+                        </p>
+
+                        <p class="texto">
+                            A linguagem ganha credibilidade ao fazer parte de algumas plataformas mundialmente
+                            conhecidas, como:
+                        </p>
+
+                        <p class="texto">
+                            - Netflix;
+                        </p>
+
+                        <p class="texto">
+                            - SoundCloud;
+                        </p>
+
+                        <p class="texto">
+                            - Twitch;
+                        </p>
+
+                        <p class="texto">
+                            - Uber.
+                        </p>
+
+                        <p class="sub-titulo">
+                            Kotlin   
+                        </p>
+
+                        <p class="texto">
+                            Assim como a Swift, a Kotlin foi desenvolvida para apoiar os programadores no
+                            desenvolvimento dos softwares e em aplicações Android.
+                        </p>
+
+                        <p class="texto">
+                            Vale lembrar que essa linguagem de programação é compatível com Java.
+                        </p>
+
+                        <p class="texto">
+                            Alguns exemplos são:
+                        </p>
+
+                        <p class="texto">
+                            - Pinterest;
+                        </p>
+
+                        <p class="texto">
+                            - Evernote;
+                        </p>
+
+                        <p class="texto">
+                            - Uber e etc.
+                        </p>
+
+                    </li>
+                </ul>
+
+                <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+
+</body>
+
+</html>

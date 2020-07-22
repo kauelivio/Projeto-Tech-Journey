@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'dangerbotregular';
+    src: url('webfont/dangerbot-webfont.woff2') format('woff2'),
+         url('webfont/dangerbot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+#header {
+    display: none;
+}
+
+#conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    background-image: url(/assets/background-teste3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: left; */
+    
+}
+
+#caixa-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    /* background-color: rgb(162, 57, 202); */
+
+    /* background-color: rgb(95, 19, 200); */
+
+    background-color: rgb(51, 10, 107);
+
+    padding: 2% 1% 2% 3%;
+
+    box-sizing: border-box;
+}
+
+#caixa-texto div:first-child {
+    font-size: calc(50px + (112 - 50) * ((100vw - 380px) / (1920 - 380)));
+    font-weight: bold;
+
+    margin-bottom: 3%;
+}
+
+#caixa-texto div {
+    font-size: calc(15px + (32 - 15) * ((100vw - 380px) / (1920 - 380)));
+
+    color: rgb(231, 223, 221);
+
+    text-align: center;
+}
+
+#caixa-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    height: 88vh;
+
+    box-sizing: border-box;
+
+    /* background-color: tomato; */
+}
+
+#caixa-form img {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+
+    
+}
+
+form {
+    color: rgb(231, 223, 221);
+    /* margin-top: 1%; */
+
+    width: 90%;
+
+    font-size: calc(16px + (32 - 16) * ((100vw - 380px) / (1920 - 380)));
+
+    align-self: center;
+}
+
+form input {
+    font-size: calc(12px + (22 - 12) * ((100vw - 380px) / (1920 - 380)));
+}
+
+form input:nth-child(3) {
+    width: 60vw;
+}
+
+#logo-form {
+
+    text-align: center;
+
+    align-self: center;
+
+    margin-top: 2%;
+
+}
+
+#logo-form img {
+    align-self: center;
+
+    width: 60%;
+    height: 60%;
+}
+
+#fname {
+    width: 90%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    outline: none;
+}
+
+#fage {
+    width: 100%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    outline: none;
+}
+
+#femail {
+    width: 100%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    outline: none;
+}
+
+#e-mail {
+    width: 40%;
+    margin-top: 5%;
+}
+
+#fmensagem {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(231, 223, 221);
+    border: none;
+
+    resize: none;
+    outline: none;
+
+    padding: 0 0 0 0;
+
+}
+
+#nome {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+}
+
+#idade {
+    display: flex;
+    flex-direction: column;
+    
+    width: 20%;
+}
+
+/* #mensagem {
+
+} */
+
+#btn-enviar {
+    color: rgb(231, 223, 221);
+    background-color: rgb(107, 142, 35);
+    border: none;
+
+    float: right;
+
+    cursor: pointer;
+
+    font-size: calc(15px + (30 - 15) * ((100vw - 380px) / (1920 - 380)));
+}
+
+#btn-enviar:hover {
+    background-color: rgb(107, 142, 35, 0.8);
+}
+
+#nome-idade {
+    width: 100%;
+    display: flex;
+}
+
+@media(max-width: 768px) {
+
+    #conteudo {
+        flex-direction: column;
+
+    }
+
+    #caixa-texto {
+        width: 100%;
+        height: 35vh;
+    }
+
+    #caixa-texto div{
+        align-self: center;
+    }
+
+    #caixa-form {
+        width: 100%;
+        height: 55vh;
+    }
+
+}
+
+

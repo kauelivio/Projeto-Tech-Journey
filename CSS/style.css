@@ -1,0 +1,413 @@
+h1 { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 24px; font-style: normal;
+    font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Century Gothic", CenturyGothic,
+    AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height:
+    15.4px; } p { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style:
+    normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Century Gothic",
+    CenturyGothic, AppleGothic, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400;
+    line-height: 30px; } pre { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 13px;
+    font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; 
+}
+
+@font-face {
+    font-family: 'dangerbotregular';
+    src: url('webfont/dangerbot-webfont.woff2') format('woff2'),
+         url('webfont/dangerbot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: rgb(14, 8, 22);
+
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    
+    /* font-family: "dangerbot" !important; */
+    /* font-size: 24px; 
+    font-style: normal;
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; */
+}
+
+#conteiner {
+    box-sizing: border-box;
+}
+
+/************************************** HEADER **************************************/
+
+#header {
+    display: none;
+    justify-content: flex-end;
+    background-color: rgb(162, 57, 202);
+
+    width: 100%;
+    height: 5vh;
+
+    box-sizing: border-box;
+}
+
+#header span {
+    align-self: center;
+    font-size: calc(4px + (15 - 4) * ((100vw - 380px) / (1920 - 380)));
+    /* font-family: ; */
+    font-weight: bold;
+    color: rgb(109, 112, 116);
+}
+
+#header span:first-child {
+    margin-right: 1%;
+}
+
+#header span:nth-child(2) {
+    margin-right: 1%;
+}
+
+#header div {
+    width: 10%;
+    align-content: center;
+    display: flex;
+}
+
+.fa {
+    
+    color: white;
+
+    padding: 4%;
+    font-size: 1em;
+    width: 15px;
+
+    text-align: center;
+    text-decoration: none;
+
+    margin-right: 6%;
+    border-radius: 50%;
+
+    background-color: rgb(168, 168, 168);
+
+    align-self: center;
+}
+
+/************************************** MENU **************************************/
+
+#conteiner-menu-responsivo {
+
+    display: none;
+}
+
+#menu-responsivo {
+    display: none;
+}
+
+
+#menu {
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    background-color: rgb(231, 223, 221);
+
+    background-image: url(../assets/backgroundtest3.png);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+
+    background-position: top;
+    
+    
+
+}
+
+#menu div {
+    display: flex;
+    align-content: center;
+}
+
+#menu img {
+    
+    height: 80%;
+    align-self: center;
+    cursor: pointer;
+}
+
+#nome-logo {
+    align-self: center;
+    
+
+    width: 20%;
+
+    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
+
+    /* font-size: calc(10px + (30 - 4) * ((100vw - 320px) / (1920 - 320))); */
+    font-weight: bold;
+    /* font */
+    font-style: italic;
+
+    font-family: 'dangerbotregular';
+}
+
+/* #nome-logo {
+    font-family:
+} */
+
+#botoes-menu {
+    list-style: none;
+    display: flex;
+
+    padding-right: 3%;
+    align-content: center;
+
+}
+
+#botoes-menu a {
+    text-decoration: none;
+    padding: 2%;
+    align-self: center;
+}
+
+#botoes-menu a li {
+    width: 100%;
+    font-size: calc(10px + (20 - 4) * ((100vw - 380px) / (1920 - 380)));
+    color: black;
+
+    /* padding-left: 4%; */
+    padding: 2%;
+    text-align: center;
+    align-self: center;
+
+    cursor: pointer;
+    
+}
+
+#botoes-menu a:hover {
+    background-color: rgb(237, 237, 238);
+    border-radius: 50px;
+}
+
+/************************************** CONTENT **************************************/
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 78vh;
+
+    width: 100%;
+
+    background-image: url(../assets/background-teste3.png);
+    background-size: 100%;
+
+    padding: 7% 0% 0% 5%;
+
+    box-sizing: border-box;
+    
+}
+
+#content div:first-child {
+    color: white;
+    font-size: calc(10px + (70 - 4) * ((100vw - 380px) / (1920 - 380)));
+    font-weight: bold;
+    width: 30%;
+}
+
+#content div:nth-child(2) {
+    color: white;
+    font-size: calc(10px + (20 - 4) * ((100vw - 380px) / (1920 - 380)));
+    width: 30%;
+
+    margin-top: 2%;
+}
+
+#botao-explorar {
+    width: 7%;
+    height: 5%;
+    background-color: rgb(107, 142, 35);
+
+    color: white;
+    font-weight: bold;
+    font-size: calc(10px + (15 - 4) * ((100vw - 380px) / (1920 - 380)));
+
+    border: none;
+    margin-top: 1%;
+
+    cursor: pointer;
+
+    text-align: center;
+    text-decoration: none;
+    
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#botao-explorar:hover {
+    /* background-color: rgb(197, 188, 60); */
+
+    background-color: rgb(107, 142, 35, 0.8);
+}
+
+/************************************** FOOTER **************************************/
+
+#footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+
+    background-color: rgb(231, 223, 221);
+}
+
+#footer a {
+    display: flex;
+    justify-content: center;
+}
+
+#footer a img {
+    height: 60%;
+    align-self: center;
+}
+
+/************************************** RESPONSIVO **************************************/
+
+@media(max-width: 768px) {
+
+/************************************** MENU - RESPONSIVO **************************************/
+
+    #header {
+        display: none;
+    }
+
+    #botoes-menu {
+        display: none;
+    }
+
+    #conteiner-menu-responsivo {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        
+    }
+
+    #menu img {
+        /* position: absolute;   */
+        height: 100%;
+    }
+
+    #menu {
+        height: 10vh;
+    }
+
+    /* #nome-logo {
+
+    } */
+        
+    .icon {
+        cursor:pointer;   
+        align-self: flex-end;
+        margin-right: 5%;
+  
+    }
+      
+    .icon .hamburger {
+        width:40px;
+        height:5px;
+        background-color:#999;
+        margin-top:5px;
+
+    }
+      
+      
+    #menu-responsivo {
+        list-style:none;
+        width:100%;
+        padding:0;
+        border-bottom:1px solid rgb(231, 223, 221);
+           
+    }
+
+    #menu-responsivo {
+        /* width: 100vw; */
+        background-color: rgb(14, 8, 22);
+        z-index: 10;  
+        justify-content: center;
+    }
+      
+    #menu-responsivo a {
+        color:rgb(231, 223, 221);
+        text-decoration:none;
+      
+    }
+      
+    #menu-responsivo a li {      
+        text-align: center;
+        padding:10px;
+        border-top:1px solid rgb(231, 223, 221);
+        transition: all .3s ease;
+      
+    }
+              
+    #menu-responsivo a li:hover {
+        background-color:#999;
+        color:white;
+        transform:translateX(-10px);
+    }
+
+/************************************** CONTENT - RESPONSIVO **************************************/   
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+
+        /* background-image: url(../assets/background.jpg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding: 7% 0% 0% 5%;
+
+        box-sizing: border-box;
+
+        width: 100vw;
+        
+    }
+
+    #content div:first-child {
+        color: white;
+        font-size: calc(40px + (70 - 30) * ((100vw - 320px) / (768 - 320)));
+        font-weight: bold;
+        width: 80%;
+    }
+
+    #content div:nth-child(2) {
+        color: white;
+        font-size: calc(20px + (20 - 8.5) * ((100vw - 320px) / (768 - 320)));
+        width: 90%;
+
+        margin-top: 2%;
+    }
+
+    #botao-explorar {
+        width: 20%;
+        height: 5%;
+        /* background-color: rgb(219, 210, 67); */
+
+        color: white;
+        font-weight: bold;
+        font-size: calc(11px + (15 - 4) * ((100vw - 320px) / (768 - 320)));
+
+        border: none;
+        margin-top: 1%;
+
+        cursor: pointer;
+    }
+
+
+}
+
+/************************************** MENUZIN TESTE **************************************/
+
